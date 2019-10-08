@@ -1,0 +1,63 @@
+db.daftarLembur.aggregate([
+    { 
+        $match: { 
+            "date": /2019,10/ 
+        } 
+    },
+    { 
+        $project: { 
+            _id: { 
+                nip: "$nip", 
+                date: "$date" 
+            },
+            nip: "$nip",
+            date: "$date",
+            overtime: "$overtime",
+            value: {
+                $cond: { 
+                    if: { 
+                        $gte: [ "$overtime", 5 ] 
+                    }, 
+                    then: 50000, 
+                    else: 20000 
+                }
+            }
+        },
+    },
+    {
+        $lookup:
+        {
+            from: "profil",
+            localField: "nip",
+            foreignField: "nip",
+            as: "profil"
+        },
+    },
+    { 
+        $group: { 
+            _id: { 
+                nip: "$nip", 
+            }, 
+            detail: { 
+                $push: { 
+                    date: "$date", 
+                    overtime: "$overtime", 
+                    value: "$value" 
+                }
+            },
+            totalOvertime: { 
+                $sum: "$overtime" 
+            },
+            total: { 
+                $sum: "$value" 
+            } 
+        }
+    },
+    {
+        $sort: {
+            "_id.nip": 1,
+            "_id.date": 1
+        }
+    }
+])
+

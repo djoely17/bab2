@@ -1,0 +1,87 @@
+db.user.aggregate([
+    {
+        $lookup: {
+            from: "profil",
+            localField: "nip",
+            foreignField: "nip",
+            as: "userProfil"
+        },
+    },
+    {   $unwind: "$userProfil" },
+    {
+        $lookup: {
+            from: "setting",
+            localField: "userProfil.position",
+            foreignField: "_id",
+            as: "userSetting"
+        },
+    },
+    {   $unwind: "$userSetting" },
+    {
+        $lookup: {
+            from: 'daftarHadir',
+            as: 'daftarHadir',
+            let: { nip: '$nip' },
+            pipeline: [
+                {
+                    $match: {
+                        $expr: {
+                            $and: [
+                                { $eq: ['$nip', '$$nip'] },
+                                { date: /2019,10/ },
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    {
+        $lookup: {
+            from: 'daftarLembur',
+            as: 'daftarLembur',
+            let: { nip: '$nip' },
+            pipeline: [
+                {
+                    $match: {
+                        $expr: {
+                            $and: [
+                                { $eq: [ '$nip', '$$nip' ] },
+                                { date: /2019,10/ },
+                            ]
+                        }
+                    }
+                },
+                {
+                    $project: { 
+                        _id: "$nip",
+                        date: "$date",
+                        overtime: "$overtime",
+                        value: {
+                            $cond: { 
+                                if: { 
+                                    $gte: [ "$overtime", 5 ] 
+                                }, 
+                                then: 50000, 
+                                else: 20000 
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    {
+        $project: { 
+            _id: "$nip",
+            fullName: "$userProfil.fullname",
+            position: "$userSetting.positionName",
+            baseSalary: "$userSetting.baseSalary",
+            daftarHadir: "$daftarHadir",
+            daftarLembur: "$daftarLembur",
+            totalLembur: { $sum: "$daftarLembur.overtime" },
+            nilaiLembur: { $sum: "$daftarLembur.value" },
+            totalGaji: { $sum: [ "$userSetting.baseSalary", { $sum: "$daftarLembur.value"} ] }
+        }
+    }
+])

@@ -1,0 +1,420 @@
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a15"),
+	"date" : "2019,10,01",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a16"),
+	"date" : "2019,10,02",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a17"),
+	"date" : "2019,10,03",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a18"),
+	"date" : "2019,10,04",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a19"),
+	"date" : "2019,10,07",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a1a"),
+	"date" : "2019,10,08",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a1b"),
+	"date" : "2019,10,09",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a1c"),
+	"date" : "2019,10,10",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a1d"),
+	"date" : "2019,10,11",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a1e"),
+	"date" : "2019,10,14",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a1f"),
+	"date" : "2019,10,15",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a20"),
+	"date" : "2019,10,16",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a21"),
+	"date" : "2019,10,17",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a22"),
+	"date" : "2019,10,18",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a23"),
+	"date" : "2019,10,21",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a24"),
+	"date" : "2019,10,22",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a25"),
+	"date" : "2019,10,23",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a26"),
+	"date" : "2019,10,24",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a27"),
+	"date" : "2019,10,25",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a28"),
+	"date" : "2019,10,28",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a29"),
+	"date" : "2019,10,29",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a2a"),
+	"date" : "2019,10,30",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959f72b0058914e04f9a2b"),
+	"date" : "2019,10,31",
+	"hadir" : "1",
+	"nip" : "1"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a2c"),
+	"date" : "2019,10,01",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a2d"),
+	"date" : "2019,10,02",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a2e"),
+	"date" : "2019,10,03",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a2f"),
+	"date" : "2019,10,04",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a30"),
+	"date" : "2019,10,07",
+	"hadir" : "0",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a31"),
+	"date" : "2019,10,08",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a32"),
+	"date" : "2019,10,09",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a33"),
+	"date" : "2019,10,10",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a34"),
+	"date" : "2019,10,11",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a35"),
+	"date" : "2019,10,14",
+	"hadir" : "0",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a36"),
+	"date" : "2019,10,15",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a37"),
+	"date" : "2019,10,16",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a38"),
+	"date" : "2019,10,17",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a39"),
+	"date" : "2019,10,18",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a3a"),
+	"date" : "2019,10,21",
+	"hadir" : "0",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a3b"),
+	"date" : "2019,10,22",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a3c"),
+	"date" : "2019,10,23",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a3d"),
+	"date" : "2019,10,24",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a3e"),
+	"date" : "2019,10,25",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a3f"),
+	"date" : "2019,10,28",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a40"),
+	"date" : "2019,10,29",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a41"),
+	"date" : "2019,10,30",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d959fe0b0058914e04f9a42"),
+	"date" : "2019,10,31",
+	"hadir" : "1",
+	"nip" : "2"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a43"),
+	"date" : "2019,10,01",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a44"),
+	"date" : "2019,10,02",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a45"),
+	"date" : "2019,10,03",
+	"hadir" : "0",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a46"),
+	"date" : "2019,10,04",
+	"hadir" : "0",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a47"),
+	"date" : "2019,10,07",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a48"),
+	"date" : "2019,10,08",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a49"),
+	"date" : "2019,10,09",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a4a"),
+	"date" : "2019,10,10",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a4b"),
+	"date" : "2019,10,11",
+	"hadir" : "0",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a4c"),
+	"date" : "2019,10,14",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a4d"),
+	"date" : "2019,10,15",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a4e"),
+	"date" : "2019,10,16",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a4f"),
+	"date" : "2019,10,17",
+	"hadir" : "0",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a50"),
+	"date" : "2019,10,18",
+	"hadir" : "0",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a51"),
+	"date" : "2019,10,21",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a52"),
+	"date" : "2019,10,22",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a53"),
+	"date" : "2019,10,23",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a54"),
+	"date" : "2019,10,24",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a55"),
+	"date" : "2019,10,25",
+	"hadir" : "0",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a56"),
+	"date" : "2019,10,28",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a57"),
+	"date" : "2019,10,29",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a58"),
+	"date" : "2019,10,30",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95a0d2b0058914e04f9a59"),
+	"date" : "2019,10,31",
+	"hadir" : "1",
+	"nip" : "3"
+},
+{
+	"_id" : ObjectId("5d95b1e5b0058914e04f9a5e"),
+	"date" : "2019,10,25",
+	"hadir" : 1,
+	"nip" : "1"
+},

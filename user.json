@@ -1,0 +1,18 @@
+{
+	"_id" : ObjectId("5d94607726f9562ddcf0acf3"),
+	"name" : "Galih",
+	"nip" : "1",
+	"password" : "123qwe"
+},
+{
+	"_id" : ObjectId("5d94608426f9562ddcf0acf4"),
+	"name" : "Julianto",
+	"nip" : "2",
+	"password" : "qweasd"
+},
+{
+	"_id" : ObjectId("5d9471ff26f9562ddcf0acfb"),
+	"name" : "Purnomo",
+	"nip" : "3",
+	"password" : "asdzxc"
+},

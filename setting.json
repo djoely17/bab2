@@ -1,0 +1,10 @@
+{
+	"_id" : ObjectId("5d9566d9b0058914e04f99fb"),
+	"baseSalary" : 6000000,
+	"positionName" : "Supervisor"
+},
+{
+	"_id" : ObjectId("5d9566d9b0058914e04f99fc"),
+	"baseSalary" : 4000000,
+	"positionName" : "Staff"
+},

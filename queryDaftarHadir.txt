@@ -1,0 +1,8 @@
+db.daftarHadir.aggregate({
+  $match: { hadir: "0", "date": /2019,10/ }
+}, {
+  $group: { _id: {nip: "$nip"}, totalAbsen: { $sum: 1 } } 
+}, {
+  $sort: { "_id.nip": 1 }
+});
+

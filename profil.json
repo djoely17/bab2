@@ -1,0 +1,30 @@
+{
+	"_id" : ObjectId("5d9461ee26f9562ddcf0acf6"),
+	"birthDate" : "1991,07,01",
+	"city" : "Malang",
+	"fullname" : "Galih Julianto",
+	"joinDate" : "2019,10,01",
+	"name" : "Galih",
+	"nip" : "1",
+	"position" : ObjectId("5d9566d9b0058914e04f99fb")
+},
+{
+	"_id" : ObjectId("5d94620d26f9562ddcf0acf7"),
+	"birthDate" : "1991,08,01",
+	"city" : "Lawang",
+	"fullname" : "Julianto Purnomo",
+	"joinDate" : "2019,10,02",
+	"name" : "Julianto",
+	"nip" : "2",
+	"position" : ObjectId("5d9566d9b0058914e04f99fc")
+},
+{
+	"_id" : ObjectId("5d956b9eb0058914e04f99fd"),
+	"birthDate" : "1991,06,01",
+	"city" : "Pasuruan",
+	"fullname" : "Purnomo Galih",
+	"joinDate" : "2019,10,03",
+	"name" : "Purnomo",
+	"nip" : "3",
+	"position" : ObjectId("5d9566d9b0058914e04f99fc")
+},
