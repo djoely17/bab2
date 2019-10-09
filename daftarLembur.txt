@@ -1,0 +1,62 @@
+db.daftarLembur.insertMany([			
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a64"),
+		"date" : "2019,10,03",
+		"nip" : "1",
+		"overtime" : 2
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a65"),
+		"date" : "2019,10,12",
+		"nip" : "1",
+		"overtime" : 4
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a66"),
+		"date" : "2019,10,13",
+		"nip" : "1",
+		"overtime" : 3
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a67"),
+		"date" : "2019,10,24",
+		"nip" : "1",
+		"overtime" : 5
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a68"),
+		"date" : "2019,10,25",
+		"nip" : "1",
+		"overtime" : 1
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a69"),
+		"date" : "2019,10,04",
+		"nip" : "2",
+		"overtime" : 2
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a6a"),
+		"date" : "2019,10,11",
+		"nip" : "2",
+		"overtime" : 5
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a6b"),
+		"date" : "2019,10,14",
+		"nip" : "2",
+		"overtime" : 3
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a6c"),
+		"date" : "2019,10,04",
+		"nip" : "3",
+		"overtime" : 4
+	},
+	{
+		"_id" : ObjectId("5d95b1fcb0058914e04f9a6d"),
+		"date" : "2019,10,11",
+		"nip" : "3",
+		"overtime" : 5
+	}
+])
