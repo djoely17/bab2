@@ -3,32 +3,23 @@ let validator = require('validator')
 
 let profilSchema = new mongoose.Schema({
   birthDate: {
-    type: String,
+    type: Date,
     required: true
   },
   city: {
     type: String,
     required: true
-  },
-  fullname: {
-    type: String,
-    required: true
-  },
+  }
   joinDate: {
-    type: String,
+    type: Date,
     required: true
   },
   fullname: {
     type: String,
     required: true
   },
-  name: {
-    type: String,
-    required: true
-  },
-  nip: {
-    type: String,
-    required: true
+  userId: {
+    type: Schema.Types.ObjectId, ref: "User"
   },
   position: {
     type: Schema.Types.ObjectId, ref: "Setting"

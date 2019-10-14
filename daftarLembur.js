@@ -2,12 +2,11 @@ let mongoose = require('mongoose')
 let validator = require('validator')
 
 let daftarLemburSchema = new mongoose.Schema({
-  nip: {
-    type: String,
-    required: true
+  userId: {
+    type: Schema.Types.ObjectId, ref: "User"
   },
   date: {
-    type: String,
+    type: Date,
     required: true
   },
   overtime: {
