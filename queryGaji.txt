@@ -1,17 +1,8 @@
 db.user.aggregate([
     {
         $lookup: {
-            from: "profil",
-            localField: "_id",
-            foreignField: "userId",
-            as: "userProfil"
-        },
-    },
-    {   $unwind: "$userProfil" },
-    {
-        $lookup: {
             from: "setting",
-            localField: "userProfil.position",
+            localField: "profil.position",
             foreignField: "_id",
             as: "userSetting"
         },
@@ -81,8 +72,7 @@ db.user.aggregate([
         $project: { 
             _id: "$_id",
             nip: "$nip",
-            fullName: "$userProfil.fullname",
-            position: "$userSetting.positionName",
+            profil: "$profil",
             baseSalary: "$userSetting.baseSalary",
             daftarHadir: "$daftarHadir",
             daftarLembur: "$daftarLembur",
