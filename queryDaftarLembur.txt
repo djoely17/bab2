@@ -1,62 +1,53 @@
-db.daftarLembur.aggregate([
-    { 
-        $match: { 
-            "date": /2019,10/ 
-        } 
-    },
-    { 
-        $project: { 
-            _id: { 
-                nip: "$nip", 
-                date: "$date" 
-            },
-            nip: "$nip",
-            date: "$date",
-            overtime: "$overtime",
-            value: {
-                $cond: { 
-                    if: { 
-                        $gte: [ "$overtime", 5 ] 
-                    }, 
-                    then: 50000, 
-                    else: 20000 
+db.user.aggregate([
+    {
+      $lookup: {
+        from:"daftarLembur",
+        let:{"id": "$_id", "nip": "$nip"},
+        pipeline:
+        [
+            {
+                $match: {
+                    $expr: {
+                        $and: [
+                            { $gte: [ "$date", ISODate("2019-10-01T00:00:00.0Z") ] },
+                            { $lt: [ "$date", ISODate("2019-11-01T00:00:00.0Z") ] },
+                            { $eq: ['$userId', '$$id'] }
+                        ]
+                    }
                 }
+            },
+            {
+                $project: { 
+                    _id: "$_id",
+                    date: "$date",
+                    overtime: "$overtime",
+                    value: {
+                        $cond: { 
+                            if: { 
+                                $gte: [ "$overtime", 5 ] 
+                            }, 
+                            then: 50000, 
+                            else: 20000 
+                        }
+                    }
+                },
             }
-        },
+        ],
+        as:"daftarLembur"
+      },
     },
     {
-        $lookup:
-        {
-            from: "profil",
-            localField: "nip",
-            foreignField: "nip",
-            as: "profil"
-        },
-    },
-    { 
-        $group: { 
-            _id: { 
-                nip: "$nip", 
-            }, 
-            detail: { 
-                $push: { 
-                    date: "$date", 
-                    overtime: "$overtime", 
-                    value: "$value" 
-                }
-            },
+        $project: { 
+            _id: "$_id",
+            name: "$name",
+            nip: "$nip",
+            daftarLembur: "$daftarLembur",
             totalOvertime: { 
-                $sum: "$overtime" 
+                $sum: "$daftarLembur.overtime" 
             },
             total: { 
-                $sum: "$value" 
+                $sum: "$daftarLembur.value" 
             } 
-        }
-    },
-    {
-        $sort: {
-            "_id.nip": 1,
-            "_id.date": 1
         }
     }
 ])

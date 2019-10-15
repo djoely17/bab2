@@ -2,8 +2,8 @@ db.user.aggregate([
     {
         $lookup: {
             from: "profil",
-            localField: "nip",
-            foreignField: "nip",
+            localField: "_id",
+            foreignField: "userId",
             as: "userProfil"
         },
     },
@@ -19,42 +19,47 @@ db.user.aggregate([
     {   $unwind: "$userSetting" },
     {
         $lookup: {
-            from: 'daftarHadir',
-            as: 'daftarHadir',
-            let: { nip: '$nip' },
-            pipeline: [
+            from: "daftarHadir",
+            let: { "id": "$_id" },
+            pipeline:
+            [
                 {
                     $match: {
                         $expr: {
                             $and: [
-                                { $eq: ['$nip', '$$nip'] },
-                                { date: /2019,10/ },
+                                { $gte: [ "$date", ISODate("2019-10-01T00:00:00.0Z") ] },
+                                { $lt: [ "$date", ISODate("2019-11-01T00:00:00.0Z") ] },
+                                { $eq: [ '$userId', '$$id'] },
+                                { $eq: [ '$hadir', true] }
                             ]
                         }
                     }
                 }
-            ]
+            ],
+            as: "daftarHadir"
         }
     },
     {
-        $lookup: {
-            from: 'daftarLembur',
-            as: 'daftarLembur',
-            let: { nip: '$nip' },
-            pipeline: [
+        $lookup:
+        {
+            from:"daftarLembur",
+            let:{"id": "$_id", "nip": "$nip"},
+            pipeline:
+            [
                 {
                     $match: {
                         $expr: {
                             $and: [
-                                { $eq: [ '$nip', '$$nip' ] },
-                                { date: /2019,10/ },
+                                { $gte: [ "$date", ISODate("2019-10-01T00:00:00.0Z") ] },
+                                { $lt: [ "$date", ISODate("2019-11-01T00:00:00.0Z") ] },
+                                { $eq: ['$userId', '$$id'] }
                             ]
                         }
                     }
                 },
                 {
                     $project: { 
-                        _id: "$nip",
+                        _id: "$_id",
                         date: "$date",
                         overtime: "$overtime",
                         value: {
@@ -66,14 +71,16 @@ db.user.aggregate([
                                 else: 20000 
                             }
                         }
-                    }
+                    },
                 }
-            ]
+            ],
+            as:"daftarLembur"
         }
     },
     {
         $project: { 
-            _id: "$nip",
+            _id: "$_id",
+            nip: "$nip",
             fullName: "$userProfil.fullname",
             position: "$userSetting.positionName",
             baseSalary: "$userSetting.baseSalary",
