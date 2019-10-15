@@ -4,7 +4,7 @@ db.user.insertMany([
 		"name" : "Galih",
 		"nip" : "1",
 		"password" : "123qwe",
-		"profil" : [
+		"profil" : 
 			{
 				"birthDate" : ISODate("1991-07-01T14:19:22+07:00"),
 				"city" : "Malang",
@@ -12,14 +12,13 @@ db.user.insertMany([
 				"joinDate" : ISODate("2019-08-01T14:19:22+07:00"),
 				"position" : ObjectId("5d9566d9b0058914e04f99fb")
 			}
-		]
 	},
 	{
 		"_id" : ObjectId("5d94608426f9562ddcf0acf4"),
 		"name" : "Julianto",
 		"nip" : "2",
 		"password" : "qweasd",
-		"profil" : [
+		"profil" : 
 			{
 				"birthDate" : ISODate("1991-08-01T14:19:22+07:00"),
 				"city" : "Malang",
@@ -27,14 +26,13 @@ db.user.insertMany([
 				"joinDate" : ISODate("2019-09-01T14:19:22+07:00"),
 				"position" : ObjectId("5d9566d9b0058914e04f99fb")
 			}
-		]
 	},
 	{
 		"_id" : ObjectId("5d9471ff26f9562ddcf0acfb"),
 		"name" : "Purnomo",
 		"nip" : "3",
 		"password" : "asdzxc",
-		"profil" : [
+		"profil" : 
 			{
 				"birthDate" : ISODate("1991-09-01T14:19:22+07:00"),
 				"city" : "Malang",
@@ -42,6 +40,7 @@ db.user.insertMany([
 				"joinDate" : ISODate("2019-10-01T14:19:22+07:00"),
 				"position" : ObjectId("5d9566d9b0058914e04f99fb")
 			}
-		]
 	}
 ])
+
+ 
