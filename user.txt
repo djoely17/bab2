@@ -3,18 +3,45 @@ db.user.insertMany([
 		"_id" : ObjectId("5d94607726f9562ddcf0acf3"),
 		"name" : "Galih",
 		"nip" : "1",
-		"password" : "123qwe"
+		"password" : "123qwe",
+		"profil" : [
+			{
+				"birthDate" : ISODate("1991-07-01T14:19:22+07:00"),
+				"city" : "Malang",
+				"fullname" : "Galih Julianto",
+				"joinDate" : ISODate("2019-08-01T14:19:22+07:00"),
+				"position" : ObjectId("5d9566d9b0058914e04f99fb")
+			}
+		]
 	},
 	{
 		"_id" : ObjectId("5d94608426f9562ddcf0acf4"),
 		"name" : "Julianto",
 		"nip" : "2",
-		"password" : "qweasd"
+		"password" : "qweasd",
+		"profil" : [
+			{
+				"birthDate" : ISODate("1991-08-01T14:19:22+07:00"),
+				"city" : "Malang",
+				"fullname" : "Julianto Purnomo",
+				"joinDate" : ISODate("2019-09-01T14:19:22+07:00"),
+				"position" : ObjectId("5d9566d9b0058914e04f99fb")
+			}
+		]
 	},
 	{
 		"_id" : ObjectId("5d9471ff26f9562ddcf0acfb"),
 		"name" : "Purnomo",
 		"nip" : "3",
-		"password" : "asdzxc"
+		"password" : "asdzxc",
+		"profil" : [
+			{
+				"birthDate" : ISODate("1991-09-01T14:19:22+07:00"),
+				"city" : "Malang",
+				"fullname" : "Purnomo Galih",
+				"joinDate" : ISODate("2019-10-01T14:19:22+07:00"),
+				"position" : ObjectId("5d9566d9b0058914e04f99fb")
+			}
+		]
 	}
 ])
